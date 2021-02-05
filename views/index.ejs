@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script></script>
+    </head>
+    <body>
+        <p>success</p>
+        <% for(var i = 0; i < urls.length; i++){ %>
+            <% if(i == urls.length - 1) { %>
+                <script>window.location.href = '<%= urls[i] %>';</script>
+            <% } else { %>
+                <script>window.open('<%= urls[i] %>', '_blank');</script>
+            <% } %>
+        <% } %>
+    </body>
+</html>
